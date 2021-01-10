@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Café</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.htm" class="logo">
+                    <h1 class="logo__nombre non-margin text-center">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.htm" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.htm" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.htm" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="non-margin">Blog de café con consejos y cursos</h2>
+            <p class="non-margin">Aprende de los expertos del café con las mejores recetas y consejos</p>
+        </div>
+    </header>
+    <div class="contenedor contenido-principal">
+        <!--Sección principal del main-->
+        <main class="blog">
+            <h3>Entradas del Blog</h3>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="Entrada Uno">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="non-margin">Tipos de Grano de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa velit aperiam perferendis at commodi eveniet nobis alias. Minus deserunt magnam voluptates! Modi, totam iusto quas ab a perferendis dignissimos illo, neque ipsam laboriosam commodi?</p>
+                    <a href="entrada.htm" class="boton boton--primario">Leer más</a>
+                </div>
+            </article>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="Entrada Uno">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="non-margin">Tres Deliciosas Recetas de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa velit aperiam perferendis at commodi eveniet nobis alias. Minus deserunt magnam voluptates! Modi, totam iusto quas ab a perferendis dignissimos illo, neque ipsam laboriosam commodi?</p>
+                    <a href="entrada.htm" class="boton boton--primario">Leer más</a>
+                </div>
+            </article>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="Entrada Uno">
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="non-margin">Beneficios del Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa velit aperiam perferendis at commodi eveniet nobis alias. Minus deserunt magnam voluptates! Modi, totam iusto quas ab a perferendis dignissimos illo, neque ipsam laboriosam commodi?</p>
+                    <a href="entrada.htm" class="boton boton--primario">Leer más</a>
+                </div>
+            </article>
+        </main>
+        <!--Sección lateral del blog-->
+        <aside class="sidebar">
+            <h3>Cursos y Talleres</h3>
+            <ul class="cursos non-padding">
+                <li class="widget-curso">
+                    <h4 class="non-margin">Técnicas de Extracción de Café</h4>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-money-bill"></i> Precio: <span class="widget-curso__dato">Gratis<span class="widget-curso__moneda"></span></span>
+                    </p>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-users"></i> Cupo: <span class="widget-curso__dato">30</span> personas
+                    </p>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-calendar"></i> Inicia: <span class="widget-curso__dato">24 de Febrero del 2021</span>
+                    </p>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-clock"></i> Horario: <span class="widget-curso__dato">10:00 a.m.</span>
+                    </p>
+                    <a href="cursos.htm" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="non-margin">Recetas de Café para Principiantes</h4>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-money-bill"></i> Precio: <span class="widget-curso__dato">150<span class="widget-curso__moneda">Mx</span></span>
+                    </p>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-users"></i> Cupo: <span class="widget-curso__dato">25</span> personas
+                    </p>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-calendar"></i> Inicia: <span class="widget-curso__dato">24 de Febrero del 2021</span>
+                    </p>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-clock"></i> Horario: <span class="widget-curso__dato">10:00 a.m.</span>
+                    </p>
+                    <a href="cursos.htm" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="non-margin">Fundamentos del Café en México</h4>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-money-bill"></i> Precio: <span class="widget-curso__dato">300<span class="widget-curso__moneda">Mx</span></span>
+                    </p>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-users"></i> Cupo: <span class="widget-curso__dato">40</span> personas
+                    </p>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-calendar"></i> Inicia: <span class="widget-curso__dato">24 de Febrero del 2021</span>
+                    </p>
+                    <p class="widget-curso__label">
+                        <i class="icono fas fa-clock"></i> Horario: <span class="widget-curso__dato">10:00 a.m.</span>
+                    </p>
+                    <a href="cursos.htm" class="boton boton--secundario">Más Información</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="contenedor">
+        <ul class="paginacion non-margin">
+            <a href="#" class="paginacion__pagina disabled">&laquo;</a>
+            <a href="#" class="paginacion__pagina active">1</a>
+            <a href="#" class="paginacion__pagina">2</a>
+            <a href="#" class="paginacion__pagina">3</a>
+            <a href="#" class="paginacion__pagina">4</a>
+            <a href="#" class="paginacion__pagina">5</a>
+            <a href="#" class="paginacion__pagina">&raquo;</a>
+        </ul>
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <div class="barra-footer">
+                <a href="index.htm" class="logo">
+                    <h3 class="logo__nombre non-margin text-center">Blog<span class="logo__bold">DeCafé</span></h3>
+                </a>
+                <ul class="sociales non-padding">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </ul>
+            </div>
+            <p class="copy text-center">&copy; Blog de Café - Todos los derechos reservados 2021.</p>
+        </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

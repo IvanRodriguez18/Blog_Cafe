@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Café</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.htm" class="logo">
+                    <h1 class="logo__nombre non-margin text-center">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.htm" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.htm" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.htm" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="non-margin">Blog de café con consejos y cursos</h2>
+            <p class="non-margin">Aprende de los expertos del café con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="text-center">Ponte en contacto con nosotros</h3>
+        <div class="contacto-bg"></div>
+        <form action="#" method="post" class="formulario">
+            <div class="campo">
+                <label for="nombre" class="campo__label">Nombre(s)</label>
+                <input type="text" class="campo__field" name="nombre" id="nombre" placeholder="Nombre(s)">
+            </div>
+            <div class="campo">
+                <label for="email" class="campo__label">Correo</label>
+                <input type="email" class="campo__field" name="email" id="email" placeholder="Correo electrónico">
+            </div>
+            <div class="campo">
+                <label for="mensaje" class="campo__label">Mensaje</label>
+                <textarea name="mensaje" class="campo__field campo__field--textarea" id="mensaje" placeholder="Escribe un mensaje"></textarea>
+            </div>
+            <div class="campo">
+                <input type="submit" class="boton boton--primario" value="Enviar">
+            </div>
+        </form>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <div class="barra-footer">
+                <a href="index.htm" class="logo">
+                    <h3 class="logo__nombre non-margin text-center">Blog<span class="logo__bold">DeCafé</span></h3>
+                </a>
+                <ul class="sociales non-padding">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </ul>
+            </div>
+            <p class="copy text-center">&copy; Blog de Café - Todos los derechos reservados 2021.</p>
+        </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

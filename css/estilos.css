@@ -1,0 +1,372 @@
+:root{
+    --font-family-Open-Sans: 'Open Sans', sans-serif;
+    --font-family-PT-Sans: 'PT Sans', sans-serif;
+    --black: #050505;
+    --white: #FFFFFF;
+    --gray-dark: #2C3E50;
+    --gray-light: #E1E1E1;
+    --brown: #784D3C;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--font-family-Open-Sans);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/*Estilos CSS globales*/
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4{
+    font-family: var(--font-family-PT-Sans);
+    line-height: 1.2;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+    opacity: .8;
+    border-radius: 1rem;
+}
+img:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: .3s ease all;
+}
+/*Utilidades CSS del proyecto*/
+.non-margin{
+    margin: 0;
+}
+.non-padding{
+    padding: 0;
+}
+.text-center{
+    text-align: center;
+}
+/*Estilos CSS del Header*/
+.webp .header{
+    background-image: url('../img/banner.webp');
+}
+.no-webp .header{
+    background-image: url('../img/banner.jpg');
+}
+.header{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.header__texto{
+    text-align: center;
+    color: var(--white);
+    margin-top: 5rem;
+}
+.barra{
+    padding-top: 4rem;
+}
+.logo{
+    color: var(--white);
+}
+.logo__nombre{
+    font-weight: 400;
+}   
+.logo__bold{
+    font-weight: 700;
+}
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.navegacion__enlace{
+    font-size: 1.8rem;
+    color: var(--white);
+    border-bottom: 2px solid transparent;
+}
+.navegacion__enlace:hover{
+    border-bottom: 2px solid var(--white);
+}
+/*Estilos CSS de las entradas Main*/
+.entrada{
+    border-bottom: 1px solid var(--gray-light);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+.entrada__contenido h4{
+    font-weight: normal;
+}
+.entrada__contenido p{
+    color: var(--gray-dark);
+    font-weight: 400;
+    font-style: italic;
+    text-align: justify;
+}
+.blog h3,
+.sidebar h3{
+    text-align: center;
+}
+.boton{
+    display: block;
+    font-family: var(--font-family-PT-Sans);
+    color: var(--white);
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.boton--primario{
+    background-color: var(--black);
+    border: 1px solid transparent;
+}
+.boton--primario:hover{
+    background-color: transparent;
+    border: 1px solid var(--black);
+    cursor: pointer;
+    color: var(--black);
+    transition: .3s ease all;
+}
+/*Estilos CSS para el Aside (Cursos y talleres)*/
+.boton--secundario{
+    background-color: var(--brown);
+    border: 1px solid transparent;
+}
+.boton--secundario:hover{
+    background-color: transparent;
+    border: 1px solid var(--brown);
+    cursor: pointer;
+    color: var(--brown);
+    transition: .3s ease all;
+}
+.cursos{
+    list-style: none;
+}
+.widget-curso{
+    border-bottom: 1px solid var(--gray-light);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.widget-curso h4{
+    font-weight: normal;
+}
+.widget-curso__label,
+.curso__label{
+    font-size: 1.4rem;
+    text-align: left;
+    color: var(--gray-dark);
+    font-weight: 700;
+}
+.widget-curso__dato,
+.curso__dato{
+    font-weight: 400;
+}
+.icono{
+    font-size: 2rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+.widget-curso__moneda,
+.curso__moneda{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: .5rem;
+}
+/*Estilos CSS de la Paginación*/
+.paginacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+.paginacion__pagina{
+    margin-right: 4rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--gray-dark);
+}
+.active{
+    background-color: var(--black);
+    padding: .5rem 2rem;
+    color: var(--white);
+    font-weight: normal;
+}
+.disabled{
+    cursor: not-allowed;
+    color: var(--gray-light);
+}
+/*Estilos CSS del Pie de Pagina*/
+.pie-pagina{
+    background-color: var(--black);
+    padding: 2.5rem;
+}
+.barra-footer{
+    text-align: center;
+}
+.sociales{
+    list-style: none;
+}
+.sociales a{
+    color: var(--white);
+    font-size: 2.3rem;
+    margin-right: 3rem;
+}
+.sociales a:last-of-type{
+    margin-right: 0;
+}
+.sociales a:hover{
+    opacity: .7;
+    transition: .3s ease all;
+}
+.copy{
+    color: var(--white);
+    font-size: 1.2rem;
+    opacity: .7;
+}
+/*Estilos CSS de Nosotros*/
+.sobre-nosotros__texto .titulo{
+    font-size: 2.5rem;
+    color: var(--gray-dark);
+    font-weight: 700;
+}
+.sobre-nosotros .biografia{
+    text-align: justify;
+    font-size: 1.4rem;
+    color: var(--gray-dark);
+}
+/*Estilos CSS para la sección de Cursos*/
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gray-light);
+}
+.curso:last-of-type{
+    border-bottom: none;
+}
+.curso__descripcion p,
+.entrada_texto{
+    text-align: justify;
+    font-size: 1.7rem;
+    color: var(--gray-dark);
+    font-style: italic;
+}
+/*Estilos CSS de la sección de Entrada*/
+.entrada_texto{
+    font-style: normal;
+}
+.entrada_enlace{
+    color: var(--gray-dark);
+    display: inline-block;
+    margin: 2rem 0;
+}
+/*Estilos CSS sección de Contacto*/
+.contacto-bg{
+    background-image: url('../img/contacto.jpg');
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formulario{
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 3rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.campo__label{
+    flex: 0 0 9rem;
+    color: var(--gray-dark);
+    font-weight: 700;
+    line-height: 2;
+    text-align: right;
+}
+.campo__field{
+    flex: 1;
+    padding: 1.5rem;
+    border: none;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, .3);
+}
+.campo__field--textarea{
+    height: 20rem;
+    max-height: 20rem;
+    min-height: 20rem;
+}
+/*MediaQuerys del proyecto*/
+@media(min-width: 768px){
+    .header__texto{
+        margin-top: 15rem;
+    }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegacion{
+        gap: 2rem;
+        margin-top: 0;
+    }
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+    .boton{
+        display: inline-block;
+    }
+    .barra-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sobre-nosotros{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis: calc(50% - 1rem);
+    }
+    .curso{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 2rem;
+    }
+    .curso__especificaciones{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
